@@ -1,5 +1,3 @@
-# header
-
 # function
 def solve(S):
     cnt = [0] * 10
@@ -14,7 +12,7 @@ def solve(S):
 
     # Check
     for i in list_8:
-        if len(str(i))==1 and keta!=1:
+        if len(str(i)) == 1 and keta != 1:
             continue
         if len(str(i)) == 2 and keta != 2:
             continue
@@ -22,7 +20,7 @@ def solve(S):
         cnt_need = [0] * 10
         tmp = i
         while tmp > 0:
-            cnt_need[tmp % 10] += 1
+            cnt_need[tmp%10] += 1
             tmp //= 10
 
         ok = True
@@ -34,6 +32,7 @@ def solve(S):
             return "Yes"
 
     return "No"
+
 
 # main
 if __name__ == '__main__':

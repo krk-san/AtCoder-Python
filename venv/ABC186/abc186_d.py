@@ -7,8 +7,9 @@ def solve(N, A):
         A_sum[i+1] = A_sum[i] + A[i]
 
     for i in range(N-1):
-        ret += (A_sum[N] - A_sum[i+1]) - (N - i - 1) * A[i]
+        ret += (A_sum[N]-A_sum[i+1]) - (N-i-1)*A[i]
     return ret
+
 
 # main
 if __name__ == '__main__':

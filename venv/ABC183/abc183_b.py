@@ -1,13 +1,17 @@
 # header
 import sys
-
 read = sys.stdin.buffer.read
 readline = sys.stdin.buffer.readline
 readlines = sys.stdin.buffer.readlines
 
-# input
-Sx, Sy, Gx, Gy = map(float, readline().split())
 
-#output
-ans = (Sx * Gy + Gx * Sy) / (Gy + Sy)
-print(ans)
+# function
+def solve(Sx, Sy, Gx, Gy):
+    ret = (Sx*Gy + Gx*Sy) / (Gy + Sy)
+    return ret
+
+
+# main
+if __name__ == '__main__':
+    Sx, Sy, Gx, Gy = map(float, readline().split())
+    print(solve(Sx, Sy, Gx, Gy))

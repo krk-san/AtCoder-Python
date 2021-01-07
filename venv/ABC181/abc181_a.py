@@ -1,7 +1,7 @@
 # header
 import sys
-
 read = sys.stdin.buffer.read
+
 
 # function
 def solve(N):
@@ -10,8 +10,8 @@ def solve(N):
     else:
         return "Black"
 
-# input
-N = int(read())
 
-# output
-print(solve(N))
+# main
+if __name__ == '__main__':
+    N = int(read())
+    print(solve(N))

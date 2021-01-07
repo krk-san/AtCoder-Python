@@ -1,7 +1,7 @@
 # header
 import sys
-
 read = sys.stdin.buffer.read
+
 
 # function
 def hexademical(x):
@@ -13,12 +13,14 @@ def hexademical(x):
         x //= 8
     return ret
 
+
 def check(x):
     while x > 0:
         if x % 10 == 7:
             return False
         x //= 10
     return True
+
 
 def solve(N):
     ret = 0
@@ -27,8 +29,9 @@ def solve(N):
             ret += 1
     return ret
 
-# input
-N = int(read())
 
-# output
-print(solve(N))
+# main
+if __name__ == '__main__':
+    N = int(read())
+
+    print(solve(N))

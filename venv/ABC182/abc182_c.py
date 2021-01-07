@@ -3,10 +3,12 @@ import sys
 read = sys.stdin.buffer.read
 readline = sys.stdin.buffer.readline
 
+
 # function
 def solve(N):
     keta = len(str(N))
     ret = keta
+
     for bit in range(1<<keta):
         tmp = 0
         cnt = 0
@@ -20,10 +22,11 @@ def solve(N):
             ret = min(ret, cnt)
     if ret == keta:
         ret = -1
+
     return ret
 
-# input
-N = int(readline())
 
-# output
-print(solve(N))
+# main
+if __name__ == '__main__':
+    N = int(readline())
+    print(solve(N))

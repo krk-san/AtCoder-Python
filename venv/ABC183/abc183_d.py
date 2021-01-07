@@ -1,5 +1,3 @@
-# header
-
 # function
 def solve(N, W, STP):
     # imos
@@ -16,6 +14,7 @@ def solve(N, W, STP):
         P_sum[i+1] += P_sum[i]
 
     return "Yes"
+
 
 # main
 if __name__ == '__main__':
